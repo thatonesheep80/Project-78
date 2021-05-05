@@ -1,0 +1,33 @@
+<html>
+<head> <title>Project 78</title> </head>
+<body>
+  <h1>My Family Book</h1>
+  <img id="fam_img" src="https://o.remove.bg/downloads/6965c5dc-d3a8-4d54-b85b-dcbdc4a63f8d/lol-removebg-preview.png">
+   <h3>A mother</h3>
+  <button onclick="up()">Next</button>
+</body>
+<script>
+ var fam_array = ["https://o.remove.bg/downloads/6965c5dc-d3a8-4d54-b85b-dcbdc4a63f8d/lol-removebg-preview.png" ,
+  "https://o.remove.bg/downloads/550780e3-099e-4d3f-873e-65cc60a30b04/pngtree-cartoon-boy-png-image_2280598-removebg-preview.png" ,
+  "https://o.remove.bg/downloads/3b07917e-f51e-4cbf-8019-6de2fbb3e90f/150-1500029_girls-girl-dancing-kids-scrapbook-cartoon-kid-removebg-preview.png"];
+    
+  var name_array = ["A father" , "A brother" , "A sister"];
+
+  var i = 0
+  function up() 
+  {
+    i++
+
+    var what_to_put_here = 5;
+    if ( i > what_to_put_here );
+    {
+      i = 0
+    };
+     
+     var up_img = fam_array[i];
+     var up_name = name_array[i];
+     document.getElementById("fam_array").src = up_img;
+     document.getElementById("name_array").innerHTML = up_name;
+  };
+</script>
+</html>
